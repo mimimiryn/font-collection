@@ -13,6 +13,7 @@
 		7185E5711B325933005A7E3B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7185E5701B325933005A7E3B /* Images.xcassets */; };
 		7185E5741B325933005A7E3B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7185E5721B325933005A7E3B /* LaunchScreen.xib */; };
 		7185E5801B325933005A7E3B /* fontcollectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185E57F1B325933005A7E3B /* fontcollectTests.swift */; };
+		7185E5BC1B343D19005A7E3B /* ふぉんと背景.png in Resources */ = {isa = PBXBuildFile; fileRef = 7185E5BB1B343D19005A7E3B /* ふぉんと背景.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		7185E5791B325933005A7E3B /* fontcollectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fontcollectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7185E57E1B325933005A7E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7185E57F1B325933005A7E3B /* fontcollectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fontcollectTests.swift; sourceTree = "<group>"; };
+		7185E5BB1B343D19005A7E3B /* ふぉんと背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ふぉんと背景.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		7185E5661B325933005A7E3B /* fontcollect */ = {
 			isa = PBXGroup;
 			children = (
+				7185E5BB1B343D19005A7E3B /* ふぉんと背景.png */,
 				7185E5691B325933005A7E3B /* AppDelegate.swift */,
 				7185E56B1B325933005A7E3B /* ViewController.swift */,
 				7185E56D1B325933005A7E3B /* Main.storyboard */,
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7185E56F1B325933005A7E3B /* Main.storyboard in Resources */,
+				7185E5BC1B343D19005A7E3B /* ふぉんと背景.png in Resources */,
 				7185E5741B325933005A7E3B /* LaunchScreen.xib in Resources */,
 				7185E5711B325933005A7E3B /* Images.xcassets in Resources */,
 			);
