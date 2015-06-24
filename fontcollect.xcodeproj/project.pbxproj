@@ -14,6 +14,10 @@
 		7185E5741B325933005A7E3B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7185E5721B325933005A7E3B /* LaunchScreen.xib */; };
 		7185E5801B325933005A7E3B /* fontcollectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185E57F1B325933005A7E3B /* fontcollectTests.swift */; };
 		7185E5BC1B343D19005A7E3B /* ふぉんと背景.png in Resources */ = {isa = PBXBuildFile; fileRef = 7185E5BB1B343D19005A7E3B /* ふぉんと背景.png */; };
+		71C8A0CA1B39D0270017D1EC /* 名称未設定-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C8A0C91B39D0270017D1EC /* 名称未設定-1.png */; };
+		71C8A0D01B3A6B860017D1EC /* ボタン枠.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C8A0CF1B3A6B860017D1EC /* ボタン枠.png */; };
+		71C8A0D21B3A6CF50017D1EC /* ボタン枠長.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C8A0D11B3A6CF50017D1EC /* ボタン枠長.png */; };
+		71C8A0D61B3AD9190017D1EC /* あつめる背景.png in Resources */ = {isa = PBXBuildFile; fileRef = 71C8A0D51B3AD9190017D1EC /* あつめる背景.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		7185E57E1B325933005A7E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7185E57F1B325933005A7E3B /* fontcollectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fontcollectTests.swift; sourceTree = "<group>"; };
 		7185E5BB1B343D19005A7E3B /* ふぉんと背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ふぉんと背景.png"; sourceTree = "<group>"; };
+		71C8A0C91B39D0270017D1EC /* 名称未設定-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "名称未設定-1.png"; sourceTree = "<group>"; };
+		71C8A0CF1B3A6B860017D1EC /* ボタン枠.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ボタン枠.png"; sourceTree = "<group>"; };
+		71C8A0D11B3A6CF50017D1EC /* ボタン枠長.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ボタン枠長.png"; sourceTree = "<group>"; };
+		71C8A0D51B3AD9190017D1EC /* あつめる背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "あつめる背景.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,10 @@
 		7185E5661B325933005A7E3B /* fontcollect */ = {
 			isa = PBXGroup;
 			children = (
+				71C8A0D51B3AD9190017D1EC /* あつめる背景.png */,
+				71C8A0D11B3A6CF50017D1EC /* ボタン枠長.png */,
+				71C8A0CF1B3A6B860017D1EC /* ボタン枠.png */,
+				71C8A0C91B39D0270017D1EC /* 名称未設定-1.png */,
 				7185E5BB1B343D19005A7E3B /* ふぉんと背景.png */,
 				7185E5691B325933005A7E3B /* AppDelegate.swift */,
 				7185E56B1B325933005A7E3B /* ViewController.swift */,
@@ -197,7 +209,11 @@
 			files = (
 				7185E56F1B325933005A7E3B /* Main.storyboard in Resources */,
 				7185E5BC1B343D19005A7E3B /* ふぉんと背景.png in Resources */,
+				71C8A0D61B3AD9190017D1EC /* あつめる背景.png in Resources */,
+				71C8A0D01B3A6B860017D1EC /* ボタン枠.png in Resources */,
+				71C8A0D21B3A6CF50017D1EC /* ボタン枠長.png in Resources */,
 				7185E5741B325933005A7E3B /* LaunchScreen.xib in Resources */,
+				71C8A0CA1B39D0270017D1EC /* 名称未設定-1.png in Resources */,
 				7185E5711B325933005A7E3B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +429,7 @@
 				7185E5851B325933005A7E3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7185E5861B325933005A7E3B /* Build configuration list for PBXNativeTarget "fontcollectTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +438,7 @@
 				7185E5881B325933005A7E3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
