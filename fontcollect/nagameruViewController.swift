@@ -36,12 +36,14 @@ class nagameruViewController: UIViewController, UITableViewDelegate, UITableView
         //let cell = TableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "cell")
         let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
         
+//        let img = UIImage(named: "KKK.png")
+//        cell.imageView!.image = img
         cell.textLabel?.text = "あ"
         self.tableView.rowHeight = 130
         
         
         //文字セルの何番目か
-        cell.textLabel?.text = String(indexPath.row)
+//        cell.textLabel?.text = String(indexPath.row)
         return cell
         
     }
