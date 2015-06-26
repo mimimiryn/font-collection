@@ -13,7 +13,7 @@ class na_cellViewController: UITableViewCell {
     @IBOutlet var mozi: UILabel!
     @IBOutlet var name: UILabel!
     @IBOutlet var explain: UILabel!
-    @IBOutlet var sample: UIImageView!
+    //@IBOutlet var sample: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
