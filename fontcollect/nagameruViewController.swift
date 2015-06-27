@@ -12,9 +12,9 @@ class nagameruViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     @IBOutlet var tableView: UITableView!
-    @IBOutlet var label1: UILabel!
     
-    let label1Array: NSArray = ["A-OTF 見出ゴMB1 Std DeBold","A-OTF-A1 明朝Std-Bold","round-mplus-1p-thin","えるまー","おめかし","さむらい"]
+    let nameArray: NSArray = ["A-OTF 見出ゴMB1 Std DeBold","A-OTF-A1 明朝Std-Bold","おめかし","round-mplus-1p-thin","えるまー","さむらい"]
+    let fontArray: NSArray = ["A1MinchoStd-Bold", "MiGoMB1Std-DeBold", "Omekashi-Font", "rounded-mplus-1p-thin", "ElmerFont", "Samurai"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,18 +38,17 @@ class nagameruViewController: UIViewController, UITableViewDelegate, UITableView
     //セルの中身
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         //let cell = TableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "cell")
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
-//        let img = UIImage(named: "KKK.png")
-//        cell.imageView!.image = img
-//        cell.textLabel?.text = "あ"
-        self.tableView.rowHeight = 130
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! Na_tableViewCell
+        //        let img = UIImage(named: "KKK.png")
+        //        cell.imageView!.image = img
+        //        cell.textLabel?.text = "あ"
+        self.tableView.rowHeight = 152
         
         
-        var label1 = tableView.viewWithTag(1) as UILabel?
-        label1!.text = "\(label1Array[indexPath.row])"
-        
-//        var label1 = UILabel(Array.self,"\(label1Array[indexPath.row])")
-//        cell.textLabel!.text = label1
+        cell.name.text = "\(nameArray[indexPath.row])"
+        cell.name.font = UIFont(name:fontArray[indexPath.row] as! String, size: 20)
+        cell.mozi.text = "あ"
+        cell.mozi.font = UIFont(name:fontArray[indexPath.row] as! String, size: 75)
         return cell
         
     }

@@ -22,6 +22,15 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>A-OTF 見出ゴMB1 Std DeBold.otf</string>
+		<string>A-OTF-A1明朝Std-Bold.otf</string>
+		<string>rounded-mplus-1p-thin.ttf</string>
+		<string>おめかし.ttf</string>
+		<string>さむらい</string>
+		<string>えるまー.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
