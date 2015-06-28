@@ -17,9 +17,11 @@ class kitaeruViewController: UIViewController {
     
     var nameArray = ["A-OTF 見出ゴMB1 Std DeBold","A-OTF-A1 明朝Std-Bold","おめかし","round-mplus-1p-thin","えるまー","さむらい"]
     
-    var fontArray = ["A1MinchoStd-Bold", "MiGoMB1Std-DeBold", "Omekashi-Font", "rounded-mplus-1p-thin", "ElmerFont", "Samurai"]
+    var fontArray = [ "MiGoMB1Std-DeBold", "A1MinchoStd-Bold", "Omekashi-Font", "rounded-mplus-1p-thin", "ElmerFont", "Samurai"]
     
     var font: UIFont!
+    
+    
     
     
     
@@ -29,6 +31,8 @@ class kitaeruViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         
+        @IBAction func choiceAnswer(sender: UIButton){
+            
         myLabel2.text = "あ"
         
         //正解フォント選ぶ
@@ -58,6 +62,11 @@ class kitaeruViewController: UIViewController {
 
         choiceButton[correctNumber].setTitle(nameArray[nameNumber] as NSString as String, forState: .Normal)
     }
+    }
+    
+    
+    
+    
     
     
     

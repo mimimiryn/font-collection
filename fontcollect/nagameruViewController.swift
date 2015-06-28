@@ -13,8 +13,10 @@ class nagameruViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBOutlet var tableView: UITableView!
     
-    let nameArray: NSArray = ["A-OTF 見出ゴMB1 Std DeBold","A-OTF-A1 明朝Std-Bold","おめかし","round-mplus-1p-thin","えるまー","さむらい"]
+    let nameArray: NSArray = ["見出ゴMB1","A1 明朝","おめかし","round-mplus-1p-thin","えるまー","さむらい"]
     let fontArray: NSArray = ["A1MinchoStd-Bold", "MiGoMB1Std-DeBold", "Omekashi-Font", "rounded-mplus-1p-thin", "ElmerFont", "Samurai"]
+    
+    //let explainArray: NSArray = ["","綺麗"
     
     override func viewDidLoad() {
         super.viewDidLoad()
