@@ -247,10 +247,10 @@
             </objects>
             <point key="canvasLocation" x="626" y="1108"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="IiP-SU-qVR">
             <objects>
-                <viewController id="Joi-nZ-QRI" sceneMemberID="viewController">
+                <viewController id="Joi-nZ-QRI" customClass="ResultViewController" customModule="fontcollect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9o8-Sp-laY"/>
                         <viewControllerLayoutGuide type="bottom" id="m0m-xX-1Fd"/>
@@ -283,15 +283,15 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あつめる" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aw1-Y3-f3o">
-                                <rect key="frame" x="120" y="28" width="89" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZA-xR-Eeg">
                                 <rect key="frame" x="36" y="319" width="263" height="117"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="きたえる" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sq-f8-1B5">
+                                <rect key="frame" x="112" y="20" width="96" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -302,7 +302,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zhm-bT-j39" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1007" y="1108"/>
+            <point key="canvasLocation" x="527" y="1758"/>
         </scene>
         <!--Kitaeru View Controller-->
         <scene sceneID="HM9-vP-JpU">
@@ -400,11 +400,12 @@
                         <outletCollection property="choiceButton" destination="udQ-Wg-ckq" collectionClass="NSMutableArray" id="ZSU-Uj-T4F"/>
                         <outletCollection property="choiceButton" destination="nd8-WQ-tbQ" collectionClass="NSMutableArray" id="giy-Rz-d65"/>
                         <outletCollection property="choiceButton" destination="uXw-BH-djz" collectionClass="NSMutableArray" id="Hz7-D8-KNU"/>
+                        <segue destination="Joi-nZ-QRI" kind="show" id="lrC-Aj-DTy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iF7-Rg-VRB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="160" y="1167"/>
+            <point key="canvasLocation" x="149" y="1237"/>
         </scene>
         <!--Seigo View Controller-->
         <scene sceneID="R5h-Y0-OYn">

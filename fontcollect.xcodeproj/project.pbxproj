@@ -17,6 +17,7 @@
 		7105DBE91B3E679D00ED9C9B /* さむらい in Resources */ = {isa = PBXBuildFile; fileRef = 7105DBE81B3E679D00ED9C9B /* さむらい */; };
 		7164A9CD1B4024E40032A816 /* 正解.png in Resources */ = {isa = PBXBuildFile; fileRef = 7164A9CB1B4024E40032A816 /* 正解.png */; };
 		7164A9CE1B4024E40032A816 /* 不正解.png in Resources */ = {isa = PBXBuildFile; fileRef = 7164A9CC1B4024E40032A816 /* 不正解.png */; };
+		7164A9D01B402A870032A816 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7164A9CF1B402A870032A816 /* ResultViewController.swift */; };
 		7185E56A1B325933005A7E3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185E5691B325933005A7E3B /* AppDelegate.swift */; };
 		7185E56C1B325933005A7E3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185E56B1B325933005A7E3B /* ViewController.swift */; };
 		7185E56F1B325933005A7E3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7185E56D1B325933005A7E3B /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 		7105DBE81B3E679D00ED9C9B /* さむらい */ = {isa = PBXFileReference; lastKnownFileType = text; name = "さむらい"; path = "fontcollect/フォント素材/さむらい"; sourceTree = "<group>"; };
 		7164A9CB1B4024E40032A816 /* 正解.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "正解.png"; sourceTree = "<group>"; };
 		7164A9CC1B4024E40032A816 /* 不正解.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "不正解.png"; sourceTree = "<group>"; };
+		7164A9CF1B402A870032A816 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		7185E5641B325933005A7E3B /* fontcollect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fontcollect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7185E5681B325933005A7E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7185E5691B325933005A7E3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				7185E56B1B325933005A7E3B /* ViewController.swift */,
 				71C8A0DB1B3BB0460017D1EC /* atumeruViewController.swift */,
 				71C8A0DD1B3BB0640017D1EC /* kitaeruViewController.swift */,
+				7164A9CF1B402A870032A816 /* ResultViewController.swift */,
 				71C8A0DF1B3BB0D00017D1EC /* seigoViewController.swift */,
 				71C8A0E51B3BBFB30017D1EC /* nagameruViewController.swift */,
 				71C8A0E71B3BBFE50017D1EC /* Na_tableViewCell.swift */,
@@ -290,6 +293,7 @@
 				71C8A0DC1B3BB0460017D1EC /* atumeruViewController.swift in Sources */,
 				71C8A0E01B3BB0D00017D1EC /* seigoViewController.swift in Sources */,
 				71C8A0E81B3BBFE50017D1EC /* Na_tableViewCell.swift in Sources */,
+				7164A9D01B402A870032A816 /* ResultViewController.swift in Sources */,
 				71C8A0E61B3BBFB30017D1EC /* nagameruViewController.swift in Sources */,
 				7185E56C1B325933005A7E3B /* ViewController.swift in Sources */,
 				71C8A0DE1B3BB0640017D1EC /* kitaeruViewController.swift in Sources */,

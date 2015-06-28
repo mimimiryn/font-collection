@@ -31,17 +31,22 @@ class kitaeruViewController: UIViewController {
     var correctAnswer:Int = 0
     
     @IBOutlet var seikai: UIImageView!
-
-
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         seikai.hidden = true
-        //func choiceQuiz(){
         
-        myLabel2.text = "あ"
+        choiceQuiz()
+        
+    }
+    
+    
+    func choiceQuize(){
+    myLabel2.text = "あ"
         
         //正解フォント選ぶ
         var nameNumber = Int(arc4random_uniform(UInt32(fontArray.count)))
@@ -67,10 +72,11 @@ class kitaeruViewController: UIViewController {
         
         
         choiceButton[correctNumber].setTitle(nameArray[nameNumber] as NSString as String, forState: .Normal)
-    }
+    
     //何番目ボタンに正解を入れるか
     var correctNumber = Int(arc4random_uniform(UInt32(2)))
-
+    
+    }
     
     
     @IBAction func choiceAnswer(sender: UIButton) {
@@ -95,19 +101,34 @@ class kitaeruViewController: UIViewController {
             seikai!.image = img
         }
         
+        quizArray.removeAtIndex(random)
+        choiceQuiz()
+        
+        
+                if sum == questionNumber {
+                    performSegueToResult()
+                }
+                quizArray.removeAtIndex(random)
+                choiceQuiz()
+        
+        func performSegueToResult() {
+            performSegueWithIdentifier("toResultView", sender: nil)
+        }
+        
+        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+            if (segue.identifier == "toResultView") {
+                
+                var ResultView : ResultViewController = segue.destinationViewController as! ResultViewController
+                
+                ResultView.correctAnswer = self.correctAnswer
+            }
+        }
 
-//        if sum == questionNumber {
-//            performSegueToResult()
-//        }
-//        quizArray.removeAtIndex(random)
-//        choiceQuiz()
-        
-        //  }
         
         
         
-    }
-
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
