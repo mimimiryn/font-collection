@@ -32,6 +32,9 @@ class kitaeruViewController: UIViewController {
     
     @IBOutlet var seikai: UIImageView!
     
+    //何番目ボタンに正解を入れるか
+    var correctNumber = Int(arc4random_uniform(UInt32(2)))
+    
     
     
     override func viewDidLoad() {
@@ -45,8 +48,8 @@ class kitaeruViewController: UIViewController {
     }
     
     
-    func choiceQuize(){
-    myLabel2.text = "あ"
+    func choiceQuiz(){
+        myLabel2.text = "あ"
         
         //正解フォント選ぶ
         var nameNumber = Int(arc4random_uniform(UInt32(fontArray.count)))
@@ -72,10 +75,9 @@ class kitaeruViewController: UIViewController {
         
         
         choiceButton[correctNumber].setTitle(nameArray[nameNumber] as NSString as String, forState: .Normal)
-    
-    //何番目ボタンに正解を入れるか
-    var correctNumber = Int(arc4random_uniform(UInt32(2)))
-    
+        
+        
+        
     }
     
     
@@ -101,40 +103,42 @@ class kitaeruViewController: UIViewController {
             seikai!.image = img
         }
         
-        quizArray.removeAtIndex(random)
+        
+        if sum == questionNumber {
+            performSegueToResult()
+        }
+        nameNumber.removeAtIndex(random())
         choiceQuiz()
         
-        
-                if sum == questionNumber {
-                    performSegueToResult()
-                }
-                quizArray.removeAtIndex(random)
-                choiceQuiz()
-        
-        func performSegueToResult() {
-            performSegueWithIdentifier("toResultView", sender: nil)
-        }
-        
-        override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-            if (segue.identifier == "toResultView") {
-                
-                var ResultView : ResultViewController = segue.destinationViewController as! ResultViewController
-                
-                ResultView.correctAnswer = self.correctAnswer
-            }
-        }
-
-        
-        
-        
-    
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        //  }
     }
     
+    
+    
+    func performSegueToResult() {
+        performSegueWithIdentifier("toResultView", sender: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "toResultView") {
+            
+            var ResultView : ResultViewController = segue.destinationViewController as! ResultViewController
+            
+            ResultView.correctAnswer = self.correctAnswer
+        }
+    }
+    
+        
+        
+        
+        
+        
+        
+        override func didReceiveMemoryWarning() {
+            super.didReceiveMemoryWarning()
+            // Dispose of any resources that can be recreated.
+        }
+        
 }
 
 

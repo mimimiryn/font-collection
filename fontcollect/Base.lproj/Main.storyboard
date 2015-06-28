@@ -186,43 +186,47 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhD-53-BCm">
                                 <rect key="frame" x="119" y="266" width="72" height="73"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="4">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rA5-2p-zee">
                                 <rect key="frame" x="219" y="132" width="49" height="33"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghD-zH-yl4">
                                 <rect key="frame" x="168" y="134" width="41" height="34"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLO-np-U3K">
-                                <rect key="frame" x="45" y="117" width="96" height="85"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLO-np-U3K" customClass="SpringButton" customModule="fontcollect" customModuleProvider="target">
+                                <rect key="frame" x="39" y="116" width="96" height="85"/>
+                                <state key="normal" title="0">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="shake"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsR-Cg-fcq">
                                 <rect key="frame" x="47" y="271" width="66" height="68"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Md-R7-Ulm">
-                                <rect key="frame" x="47" y="412" width="88" height="99"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="44" y="408" width="90" height="105"/>
+                                <state key="normal" title="6">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45i-cT-5B8">
                                 <rect key="frame" x="193" y="257" width="73" height="82"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="5">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -233,8 +237,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nqt-fb-d8z">
-                                <rect key="frame" x="181" y="406" width="87" height="100"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="180" y="400" width="87" height="100"/>
+                                <state key="normal" title="7">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -242,6 +246,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="button0" destination="HLO-np-U3K" id="PyJ-g5-aES"/>
+                        <outlet property="button1" destination="ghD-zH-yl4" id="Hpm-hf-GJP"/>
+                        <outlet property="button2" destination="rA5-2p-zee" id="RpJ-gZ-83O"/>
+                        <outlet property="button3" destination="fsR-Cg-fcq" id="Ebu-I5-zC5"/>
+                        <outlet property="button4" destination="vhD-53-BCm" id="Z4J-RA-67O"/>
+                        <outlet property="button5" destination="45i-cT-5B8" id="VHi-Nd-E53"/>
+                        <outlet property="button6" destination="1Md-R7-Ulm" id="esG-ug-qyJ"/>
+                        <outlet property="button7" destination="Nqt-fb-d8z" id="wSL-8q-b6R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZf-Bm-czY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -400,7 +414,7 @@
                         <outletCollection property="choiceButton" destination="udQ-Wg-ckq" collectionClass="NSMutableArray" id="ZSU-Uj-T4F"/>
                         <outletCollection property="choiceButton" destination="nd8-WQ-tbQ" collectionClass="NSMutableArray" id="giy-Rz-d65"/>
                         <outletCollection property="choiceButton" destination="uXw-BH-djz" collectionClass="NSMutableArray" id="Hz7-D8-KNU"/>
-                        <segue destination="Joi-nZ-QRI" kind="show" id="lrC-Aj-DTy"/>
+                        <segue destination="Joi-nZ-QRI" kind="show" id="nfs-B0-G3l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iF7-Rg-VRB" userLabel="First Responder" sceneMemberID="firstResponder"/>
