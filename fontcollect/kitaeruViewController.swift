@@ -21,18 +21,26 @@ class kitaeruViewController: UIViewController {
     
     var font: UIFont!
     
+    //出題数
+    var questionNumber:Int = 5
     
+    //現在の問題数
+    var sum:Int = 0
     
+    //正解数
+    var correctAnswer:Int = 0
     
-    
+    @IBOutlet var seikai: UIImageView!
+
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        seikai.hidden = true
+        //func choiceQuiz(){
         
-        @IBAction func choiceAnswer(sender: UIButton){
-            
         myLabel2.text = "あ"
         
         //正解フォント選ぶ
@@ -57,23 +65,55 @@ class kitaeruViewController: UIViewController {
             nameArrray2.removeAtIndex(randomChoice)
         }
         
-        //何番目ボタンに正解を入れるか
-        var correctNumber = Int(arc4random_uniform(UInt32(2)))
-
+        
         choiceButton[correctNumber].setTitle(nameArray[nameNumber] as NSString as String, forState: .Normal)
     }
+    //何番目ボタンに正解を入れるか
+    var correctNumber = Int(arc4random_uniform(UInt32(2)))
+
+    
+    
+    @IBAction func choiceAnswer(sender: UIButton) {
+        sum++
+        println("random \(random)")
+        if correctNumber as Int == sender.tag {
+            
+            seikai.hidden = false
+            
+            let img = UIImage(named:"正解.png")
+            seikai!.image = img
+            
+            
+            
+            //正解数を増やす
+            correctAnswer++
+        }else{
+            
+            seikai.hidden = false
+            
+            let img = UIImage(named:"不正解.png")
+            seikai!.image = img
+        }
+        
+
+//        if sum == questionNumber {
+//            performSegueToResult()
+//        }
+//        quizArray.removeAtIndex(random)
+//        choiceQuiz()
+        
+        //  }
+        
+        
+        
     }
-    
-    
-    
-    
-    
-    
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    
 }
+
+

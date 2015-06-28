@@ -247,6 +247,63 @@
             </objects>
             <point key="canvasLocation" x="626" y="1108"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="IiP-SU-qVR">
+            <objects>
+                <viewController id="Joi-nZ-QRI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9o8-Sp-laY"/>
+                        <viewControllerLayoutGuide type="bottom" id="m0m-xX-1Fd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="esZ-1C-sEq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="問正解" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORf-hW-x4p">
+                                <rect key="frame" x="201" y="260" width="103" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5問中" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YY-0G-rfg">
+                                <rect key="frame" x="31" y="50" width="103" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="紙.png" translatesAutoresizingMaskIntoConstraints="NO" id="ANH-ir-FbC">
+                                <rect key="frame" x="63" y="91" width="181" height="186"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ボタン枠長.png" translatesAutoresizingMaskIntoConstraints="NO" id="IFD-6o-JkL">
+                                <rect key="frame" x="44" y="402" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYa-wQ-nKX">
+                                <rect key="frame" x="44" y="444" width="240" height="43"/>
+                                <state key="normal" title="タイトルにもどる">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あつめる" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aw1-Y3-f3o">
+                                <rect key="frame" x="120" y="28" width="89" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZA-xR-Eeg">
+                                <rect key="frame" x="36" y="319" width="263" height="117"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zhm-bT-j39" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1007" y="1108"/>
+        </scene>
         <!--Kitaeru View Controller-->
         <scene sceneID="HM9-vP-JpU">
             <objects>
@@ -293,12 +350,18 @@
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="choiceAnswer:" destination="9O5-Pb-20E" eventType="touchUpInside" id="f5y-Y3-p2G"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXw-BH-djz">
                                 <rect key="frame" x="22" y="479" width="279" height="40"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="choiceAnswer:" destination="9O5-Pb-20E" eventType="touchUpInside" id="J4N-gq-bNI"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDe-Pw-5aW">
                                 <rect key="frame" x="91" y="211" width="129" height="134"/>
@@ -311,6 +374,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="choiceAnswer:" destination="9O5-Pb-20E" eventType="touchUpInside" id="bOA-0F-gnS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x28-lf-et3">
                                 <rect key="frame" x="24" y="30" width="54" height="36"/>
@@ -321,12 +387,16 @@
                                     <segue destination="vXZ-lx-hvc" kind="show" id="xvf-LP-Net"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="正解.png" translatesAutoresizingMaskIntoConstraints="NO" id="xUD-NT-tLo">
+                                <rect key="frame" x="61" y="160" width="200" height="200"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="myLabel2" destination="hDe-Pw-5aW" id="Yvy-pQ-SEK"/>
+                        <outlet property="seikai" destination="xUD-NT-tLo" id="g9v-LZ-Ju0"/>
                         <outletCollection property="choiceButton" destination="udQ-Wg-ckq" collectionClass="NSMutableArray" id="ZSU-Uj-T4F"/>
                         <outletCollection property="choiceButton" destination="nd8-WQ-tbQ" collectionClass="NSMutableArray" id="giy-Rz-d65"/>
                         <outletCollection property="choiceButton" destination="uXw-BH-djz" collectionClass="NSMutableArray" id="Hz7-D8-KNU"/>
@@ -396,9 +466,10 @@
         <image name="ふぉんと背景.png" width="400" height="710"/>
         <image name="ボタン枠.png" width="612" height="792"/>
         <image name="ボタン枠長.png" width="193" height="39"/>
+        <image name="正解.png" width="133" height="133"/>
         <image name="紙.png" width="129" height="135"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5oS-7c-aIj"/>
+        <segue reference="xvf-LP-Net"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -15,6 +15,8 @@
 		7105DBE51B3E66EE00ED9C9B /* rounded-mplus-1p-thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7105DBE01B3E66EE00ED9C9B /* rounded-mplus-1p-thin.ttf */; };
 		7105DBE61B3E66EE00ED9C9B /* おめかし.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7105DBE11B3E66EE00ED9C9B /* おめかし.ttf */; };
 		7105DBE91B3E679D00ED9C9B /* さむらい in Resources */ = {isa = PBXBuildFile; fileRef = 7105DBE81B3E679D00ED9C9B /* さむらい */; };
+		7164A9C81B4020B60032A816 /* 正解.png in Resources */ = {isa = PBXBuildFile; fileRef = 7164A9C71B4020B60032A816 /* 正解.png */; };
+		7164A9CA1B4022050032A816 /* 不正解.png in Resources */ = {isa = PBXBuildFile; fileRef = 7164A9C91B4022050032A816 /* 不正解.png */; };
 		7185E56A1B325933005A7E3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185E5691B325933005A7E3B /* AppDelegate.swift */; };
 		7185E56C1B325933005A7E3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185E56B1B325933005A7E3B /* ViewController.swift */; };
 		7185E56F1B325933005A7E3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7185E56D1B325933005A7E3B /* Main.storyboard */; };
@@ -52,6 +54,9 @@
 		7105DBE01B3E66EE00ED9C9B /* rounded-mplus-1p-thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rounded-mplus-1p-thin.ttf"; sourceTree = "<group>"; };
 		7105DBE11B3E66EE00ED9C9B /* おめかし.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "おめかし.ttf"; sourceTree = "<group>"; };
 		7105DBE81B3E679D00ED9C9B /* さむらい */ = {isa = PBXFileReference; lastKnownFileType = text; name = "さむらい"; path = "fontcollect/フォント素材/さむらい"; sourceTree = "<group>"; };
+		7164A9C51B40205D0032A816 /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
+		7164A9C71B4020B60032A816 /* 正解.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "正解.png"; sourceTree = "<group>"; };
+		7164A9C91B4022050032A816 /* 不正解.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "不正解.png"; sourceTree = "<group>"; };
 		7185E5641B325933005A7E3B /* fontcollect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fontcollect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7185E5681B325933005A7E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7185E5691B325933005A7E3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +100,7 @@
 		7185E55B1B325933005A7E3B = {
 			isa = PBXGroup;
 			children = (
+				7164A9C51B40205D0032A816 /* correct.png */,
 				7105DBE81B3E679D00ED9C9B /* さむらい */,
 				7105DBDE1B3E66EE00ED9C9B /* A-OTF 見出ゴMB1 Std DeBold.otf */,
 				7105DBDF1B3E66EE00ED9C9B /* A-OTF-A1明朝Std-Bold.otf */,
@@ -119,6 +125,8 @@
 		7185E5661B325933005A7E3B /* fontcollect */ = {
 			isa = PBXGroup;
 			children = (
+				7164A9C91B4022050032A816 /* 不正解.png */,
+				7164A9C71B4020B60032A816 /* 正解.png */,
 				7105DBD61B3D462600ED9C9B /* フォント素材 */,
 				7105DB981B3BD66D00ED9C9B /* ボタン枠長.png */,
 				71C8A0E31B3BB2C00017D1EC /* 紙.png */,
@@ -257,9 +265,11 @@
 				71C8A0D61B3AD9190017D1EC /* あつめる背景.png in Resources */,
 				7105DB991B3BD66D00ED9C9B /* ボタン枠長.png in Resources */,
 				71C8A0E41B3BB2C00017D1EC /* 紙.png in Resources */,
+				7164A9C81B4020B60032A816 /* 正解.png in Resources */,
 				7105DBD71B3D462600ED9C9B /* フォント素材 in Resources */,
 				71C8A0D01B3A6B860017D1EC /* ボタン枠.png in Resources */,
 				7185E5741B325933005A7E3B /* LaunchScreen.xib in Resources */,
+				7164A9CA1B4022050032A816 /* 不正解.png in Resources */,
 				71C8A0CA1B39D0270017D1EC /* 名称未設定-1.png in Resources */,
 				7185E5711B325933005A7E3B /* Images.xcassets in Resources */,
 			);
