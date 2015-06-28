@@ -277,12 +277,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ボタン枠長.png" translatesAutoresizingMaskIntoConstraints="NO" id="dVv-VB-aZ7">
                                 <rect key="frame" x="23" y="373" width="281" height="40"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udQ-Wg-ckq">
-                                <rect key="frame" x="135" y="378" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1問目" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1a-Z7-c0L">
                                 <rect key="frame" x="135" y="97" width="44" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -304,13 +298,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nd8-WQ-tbQ">
-                                <rect key="frame" x="135" y="431" width="46" height="30"/>
+                                <rect key="frame" x="55" y="431" width="234" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXw-BH-djz">
-                                <rect key="frame" x="135" y="484" width="46" height="30"/>
+                                <rect key="frame" x="46" y="484" width="223" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -321,12 +315,21 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udQ-Wg-ckq">
+                                <rect key="frame" x="46" y="378" width="234" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="myLabel2" destination="hDe-Pw-5aW" id="LmL-3n-jAP"/>
+                        <outlet property="myLabel2" destination="hDe-Pw-5aW" id="Yvy-pQ-SEK"/>
+                        <outletCollection property="choiceButton" destination="udQ-Wg-ckq" collectionClass="NSMutableArray" id="ZSU-Uj-T4F"/>
+                        <outletCollection property="choiceButton" destination="nd8-WQ-tbQ" collectionClass="NSMutableArray" id="giy-Rz-d65"/>
+                        <outletCollection property="choiceButton" destination="uXw-BH-djz" collectionClass="NSMutableArray" id="Hz7-D8-KNU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iF7-Rg-VRB" userLabel="First Responder" sceneMemberID="firstResponder"/>
