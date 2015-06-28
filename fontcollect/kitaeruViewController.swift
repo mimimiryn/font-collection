@@ -101,13 +101,14 @@ class kitaeruViewController: UIViewController {
             
             let img = UIImage(named:"不正解.png")
             seikai!.image = img
+            
         }
         
         
         if sum == questionNumber {
             performSegueToResult()
         }
-        nameNumber.removeAtIndex(random())
+        //nameNumber.removeAtIndex(random())
         choiceQuiz()
         
         //  }
