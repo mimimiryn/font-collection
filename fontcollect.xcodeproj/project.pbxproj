@@ -54,7 +54,6 @@
 		7105DBE01B3E66EE00ED9C9B /* rounded-mplus-1p-thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "rounded-mplus-1p-thin.ttf"; sourceTree = "<group>"; };
 		7105DBE11B3E66EE00ED9C9B /* おめかし.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "おめかし.ttf"; sourceTree = "<group>"; };
 		7105DBE81B3E679D00ED9C9B /* さむらい */ = {isa = PBXFileReference; lastKnownFileType = text; name = "さむらい"; path = "fontcollect/フォント素材/さむらい"; sourceTree = "<group>"; };
-		7164A9C51B40205D0032A816 /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
 		7164A9CB1B4024E40032A816 /* 正解.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "正解.png"; sourceTree = "<group>"; };
 		7164A9CC1B4024E40032A816 /* 不正解.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "不正解.png"; sourceTree = "<group>"; };
 		7185E5641B325933005A7E3B /* fontcollect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fontcollect.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,7 +99,6 @@
 		7185E55B1B325933005A7E3B = {
 			isa = PBXGroup;
 			children = (
-				7164A9C51B40205D0032A816 /* correct.png */,
 				7105DBE81B3E679D00ED9C9B /* さむらい */,
 				7105DBDE1B3E66EE00ED9C9B /* A-OTF 見出ゴMB1 Std DeBold.otf */,
 				7105DBDF1B3E66EE00ED9C9B /* A-OTF-A1明朝Std-Bold.otf */,
