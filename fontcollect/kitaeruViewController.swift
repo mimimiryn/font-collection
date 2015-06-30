@@ -105,11 +105,14 @@ class kitaeruViewController: UIViewController {
         }
         
         
+        //正解とかみせるプログラム入れる
+        
         if sum == questionNumber {
             performSegueToResult()
         }
         //nameNumber.removeAtIndex(random())
         choiceQuiz()
+        seikai.hidden = true
         
         //  }
     }

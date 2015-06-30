@@ -31,6 +31,12 @@ class atumeruViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        @IBAction func shake(){
+            button0.animation = "shake"
+            button0.animate()
+        }
+
+        
         let fontArray: NSArray = ["A1MinchoStd-Bold", "MiGoMB1Std-DeBold", "Omekashi-Font", "rounded-mplus-1p-thin", "ElmerFont", "Samurai"]
         
         var nameNumber0 = Int(arc4random_uniform(UInt32(fontArray.count)))
@@ -89,10 +95,6 @@ class atumeruViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-//    @IBAction func shake(){
-//        button0.animation = "shake"
-//        button0.animate()
-//    }
     
     
     /*
