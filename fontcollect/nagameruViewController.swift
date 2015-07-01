@@ -10,13 +10,18 @@ import UIKit
 
 class nagameruViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    override func viewWillAppear(animated: Bool) {
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
+        var okuru = fontArray[nameNumber0]
+    }
+
     
     @IBOutlet var tableView: UITableView!
     
     let nameArray: NSArray = ["見出ゴMB1","A1 明朝","おめかし","round-mplus-1p-thin","えるまー","さむらい"]
     let fontArray: NSArray = ["A1MinchoStd-Bold", "MiGoMB1Std-DeBold", "Omekashi-Font", "rounded-mplus-1p-thin", "ElmerFont", "Samurai"]
     
-    //let explainArray: NSArray = ["","綺麗"
+    //let explainArray: NSArray = ["","綺麗"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +59,7 @@ class nagameruViewController: UIViewController, UITableViewDelegate, UITableView
         return cell
         
     }
+    
     
     
 }

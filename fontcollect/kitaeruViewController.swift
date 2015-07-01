@@ -88,14 +88,14 @@ class kitaeruViewController: UIViewController {
         choiceButton[correctNumber].setTitle(nameArray[nameNumber] as NSString as String, forState: .Normal)
     
         
-        
     }
+   
     
     
     @IBAction func choiceAnswer(sender: UIButton) {
         sum++
         println("random \(random)")
-        
+
         seigomoji.text = "あ"
 //        seigomoji.font = UIFont(name:fontArray[nameNumber], size: 150)
 //        seigoname.text = nameArray[nameNumber]
