@@ -63,8 +63,7 @@ class atumeruViewController: UIViewController {
         mojiNumber6 = Int(arc4random_uniform(UInt32(mojiArray.count)))
         mojiNumber7 = Int(arc4random_uniform(UInt32(mojiArray.count)))
         
-        
-        
+
         button0?.setTitle(mojiArray[mojiNumber0] as? String, forState: .Normal)
         button1?.setTitle(mojiArray[mojiNumber1] as? String, forState: .Normal)
         button2?.setTitle(mojiArray[mojiNumber2] as? String, forState: .Normal)
