@@ -250,6 +250,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="button0" destination="HLO-np-U3K" id="YMz-O3-E8X"/>
                         <outlet property="button1" destination="ghD-zH-yl4" id="f9X-YT-Nx3"/>
                         <outlet property="button2" destination="rA5-2p-zee" id="9WP-LH-Wcd"/>
                         <outlet property="button3" destination="fsR-Cg-fcq" id="0kN-xY-dBt"/>

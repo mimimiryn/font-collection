@@ -10,14 +10,14 @@ import UIKit
 
 class atumeruViewController: UIViewController {
     
-//    
-//    @IBOutlet weak var button1: SpringButton!
-//    @IBOutlet weak var button2: SpringButton!
-//    @IBOutlet weak var button3: SpringButton!
-//    @IBOutlet weak var button4: SpringButton!
-//    @IBOutlet weak var button5: SpringButton!
-//    @IBOutlet weak var button6: SpringButton!
-//    @IBOutlet weak var button7: SpringButton!
+    @IBOutlet weak var button0: SpringButton!
+    @IBOutlet weak var button1: SpringButton!
+    @IBOutlet weak var button2: SpringButton!
+    @IBOutlet weak var button3: SpringButton!
+    @IBOutlet weak var button4: SpringButton!
+    @IBOutlet weak var button5: SpringButton!
+    @IBOutlet weak var button6: SpringButton!
+    @IBOutlet weak var button7: SpringButton!
     
     
     var fontArray: NSArray = ["A1MinchoStd-Bold", "MiGoMB1Std-DeBold", "Omekashi-Font", "rounded-mplus-1p-thin", "ElmerFont", "Samurai"]
@@ -63,7 +63,7 @@ class atumeruViewController: UIViewController {
         mojiNumber6 = Int(arc4random_uniform(UInt32(mojiArray.count)))
         mojiNumber7 = Int(arc4random_uniform(UInt32(mojiArray.count)))
         
-
+        
         button0?.setTitle(mojiArray[mojiNumber0] as? String, forState: .Normal)
         button1?.setTitle(mojiArray[mojiNumber1] as? String, forState: .Normal)
         button2?.setTitle(mojiArray[mojiNumber2] as? String, forState: .Normal)
