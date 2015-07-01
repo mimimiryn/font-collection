@@ -24,7 +24,7 @@ class ResultViewController: UIViewController {
             resultTextView.text = String("フォントマスター！")
             
         }else if(correctAnswer == 4){
-            resultTextView.text = String("おしいフォントマスターまでもう少し！")
+            resultTextView.text = String("おしい フォントマスターまでもう少し！")
             
         }else if(correctAnswer == 3){
             resultTextView.text = String("がんばって！")

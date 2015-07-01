@@ -86,7 +86,7 @@ class kitaeruViewController: UIViewController {
         
         
         choiceButton[correctNumber].setTitle(nameArray[nameNumber] as NSString as String, forState: .Normal)
-        
+    
         
         
     }
