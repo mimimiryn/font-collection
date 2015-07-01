@@ -35,6 +35,8 @@ class kitaeruViewController: UIViewController {
     //何番目ボタンに正解を入れるか
     var correctNumber = Int(arc4random_uniform(UInt32(2)))
     
+    var nameNumber : Int!
+    
     @IBOutlet var wakuhaikei: UIImageView!
     @IBOutlet var seigomoji: UILabel!
     @IBOutlet var seigoname: UILabel!
@@ -71,7 +73,7 @@ class kitaeruViewController: UIViewController {
         myLabel2.text = "あ"
         
         //正解フォント選ぶ
-        var nameNumber = Int(arc4random_uniform(UInt32(fontArray.count)))
+        nameNumber! = Int(arc4random_uniform(UInt32(fontArray.count)))
         //そのフォントで文字を書く
         myLabel2.font = UIFont(name:fontArray[nameNumber], size: 130)
         
@@ -97,9 +99,9 @@ class kitaeruViewController: UIViewController {
         println("random \(random)")
 
         seigomoji.text = "あ"
-//        seigomoji.font = UIFont(name:fontArray[nameNumber], size: 150)
-//        seigoname.text = nameArray[nameNumber]
-//        seigoname.font = UIFont(name:fontArray[nameNumber], size: 23)
+        seigomoji.font = UIFont(name:fontArray[nameNumber!], size: 150)
+        seigoname.text = nameArray[nameNumber]
+        seigoname.font = UIFont(name:fontArray[nameNumber!], size: 23)
         
         
         wakuhaikei.hidden = false

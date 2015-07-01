@@ -639,6 +639,6 @@
         <image name="紙.png" width="129" height="135"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ou3-kg-2g4"/>
+        <segue reference="xvf-LP-Net"/>
     </inferredMetricsTieBreakers>
 </document>

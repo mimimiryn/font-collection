@@ -11,8 +11,14 @@ import UIKit
 class nagameruViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewWillAppear(animated: Bool) {
+//        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
+//        var messages = appDelegate.message
+        
+       // println(messages)
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
-        var okuru = fontArray[nameNumber0]
+        var fontNumber2 = appDelegate.okuru
+        
+        println(fontNumber2)
     }
 
     
@@ -55,7 +61,9 @@ class nagameruViewController: UIViewController, UITableViewDelegate, UITableView
         cell.name.text = "\(nameArray[indexPath.row])"
         cell.name.font = UIFont(name:fontArray[indexPath.row] as! String, size: 20)
         cell.mozi.text = "あ"
-        cell.mozi.font = UIFont(name:fontArray[indexPath.row] as! String, size: 100)
+//        cell.mozi.font = UIFont(name:fontArray[indexPath.row] as! String, size: 100)
+        //cell.mozi.font = UIFont(name:fontArray[fontNumber2] as! String, size: 100)
+
         return cell
         
     }

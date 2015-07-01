@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>45E3D5C5-739D-482D-BBD1-5CE4D3DDCF45</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>fontcollect</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>BABDC0F6B86EF2FE46E12D8DDA21AF91398B2D20</key>
 		<string>https://github.com/mimimiryn/font-collection.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>fontcollect.xcodeproj/project.xcworkspace</string>
+	<string>fontcollect.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>BABDC0F6B86EF2FE46E12D8DDA21AF91398B2D20</key>

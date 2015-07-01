@@ -15,6 +15,8 @@ class Na_tableViewCell: UITableViewCell {
     @IBOutlet var explain: UILabel!
     //@IBOutlet var sample: UIImageView!
     
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

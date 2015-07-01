@@ -92,9 +92,11 @@ class atumeruViewController: UIViewController {
     }
     
     @IBAction func button0(sender: SpringButton) {
-        
+//        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
+//        appDelegate.message = "messages" //appDelegateの変数を操作
+
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
-        appDelegate.okuru = fontArray[nameNumber0] as! String //appDelegateの変数を操作
+        appDelegate.okuru = nameNumber0 //appDelegateの変数を操作
         
         button0.animation = "flash"
         button0.animate()
