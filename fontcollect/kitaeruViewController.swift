@@ -15,7 +15,7 @@ class kitaeruViewController: UIViewController {
     //@IBOutlet var choiceButton: UIButton!
     //@IBOutlet var choiceButton: UIButton!
     
-    var nameArray = ["A-OTF 見出ゴMB1 Std DeBold","A-OTF-A1 明朝Std-Bold","おめかし","round-mplus-1p-thin","えるまー","さむらい"]
+    var nameArray = ["見出ゴMB1","A1 明朝","おめかし","round-mplus-1p-thin","えるまー","さむらい"]
     
     var fontArray = [ "MiGoMB1Std-DeBold", "A1MinchoStd-Bold", "Omekashi-Font", "rounded-mplus-1p-thin", "ElmerFont", "Samurai"]
     
@@ -41,17 +41,18 @@ class kitaeruViewController: UIViewController {
     @IBOutlet var nextquiz: UIButton!
     @IBOutlet var seigoimage: UIImageView!
     @IBOutlet var seigo: UILabel!
+    @IBOutlet var mondaisuu: UILabel!
     
     //var nameNumber: Int = 0
     //var rondom: Int = 0
     
-    var nameNumber = Int(arc4random_uniform(UInt32(5)))
-    
-    
+    //var nameNumber = Int(arc4random_uniform(UInt32(5)))
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        nextquiz.addTarget(self, action: "onClickMyButton:", forControlEvents: .TouchUpInside)
         
         wakuhaikei.hidden = true
         seigomoji.hidden = true
@@ -61,13 +62,16 @@ class kitaeruViewController: UIViewController {
         seigo.hidden = true
         
         choiceQuiz()
+        
+        mondaisuu.text = "\(String(sum))問目"
+        
     }
     
     func choiceQuiz(){
         myLabel2.text = "あ"
         
         //正解フォント選ぶ
-        //var nameNumber = Int(arc4random_uniform(UInt32(fontArray.count)))
+        var nameNumber = Int(arc4random_uniform(UInt32(fontArray.count)))
         //そのフォントで文字を書く
         myLabel2.font = UIFont(name:fontArray[nameNumber], size: 130)
         
@@ -93,9 +97,9 @@ class kitaeruViewController: UIViewController {
         println("random \(random)")
         
         seigomoji.text = "あ"
-        seigomoji.font = UIFont(name:fontArray[nameNumber], size: 100)
-        seigoname.text = nameArray[nameNumber]
-        seigoname.font = UIFont(name:fontArray[nameNumber], size: 15)
+//        seigomoji.font = UIFont(name:fontArray[nameNumber], size: 150)
+//        seigoname.text = nameArray[nameNumber]
+//        seigoname.font = UIFont(name:fontArray[nameNumber], size: 23)
         
         
         wakuhaikei.hidden = false
@@ -124,11 +128,11 @@ class kitaeruViewController: UIViewController {
         if self.sum == self.questionNumber {
             self.performSegueToResult()
         }
-        //self.myLabel2.removeAtIndex(self.nameNumber)
+        //nameArray.removeAtIndex(nameNumber)
         choiceQuiz()
     }
     
-    internal func onClickNMyButton(sender: UIButton!){
+    internal func onClickMyButton(sender: UIButton!){
         wakuhaikei.hidden = true
         seigomoji.hidden = true
         seigoname.hidden = true

@@ -7,25 +7,18 @@
 //
 
 import UIKit
-import AudioToolbox
 
 class atumeruViewController: UIViewController {
     
 //    
-//    for var i = 0; i < 8; i++ {
-//    @IBOutlet var button[i]: UIButton?
-//    }
-
+//    @IBOutlet weak var button1: SpringButton!
+//    @IBOutlet weak var button2: SpringButton!
+//    @IBOutlet weak var button3: SpringButton!
+//    @IBOutlet weak var button4: SpringButton!
+//    @IBOutlet weak var button5: SpringButton!
+//    @IBOutlet weak var button6: SpringButton!
+//    @IBOutlet weak var button7: SpringButton!
     
-    @IBOutlet var button0: UIButton?
-    @IBOutlet var button1: UIButton?
-    @IBOutlet var button2: UIButton?
-    @IBOutlet var button3: UIButton?
-    @IBOutlet var button4: UIButton?
-    @IBOutlet var button5: UIButton?
-    @IBOutlet var button6: UIButton?
-    @IBOutlet var button7: UIButton?
-    @IBOutlet var button8: UIButton?
     
     var fontArray: NSArray = ["A1MinchoStd-Bold", "MiGoMB1Std-DeBold", "Omekashi-Font", "rounded-mplus-1p-thin", "ElmerFont", "Samurai"]
     
@@ -48,21 +41,6 @@ class atumeruViewController: UIViewController {
     var mojiNumber7: Int!
     
     var mojiArray: NSArray = ["あ","",""]
-    
-    
-    
-    
-    //        for var i = 0; i > 8; i++ {
-    //        var nameNumber = Int(arc4random_uniform(UInt32(fontArray.count))
-    //            button[i]?.titleLabel!.font = UIFont(name: fontArray[nameNumber] as! String, size: 130)
-    //
-    //        }
-    
-    //var mojiArray: NSArray = ["あ"]
-    
-    
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -112,12 +90,19 @@ class atumeruViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        
     }
-    @IBAction func tapkey(sender: UILabel!){
-        var myDefault = NSUserDefaults.standardUserDefaults()
-        myDefault.setObject(mojiArray, forKey: "fontkey")
+    
+    @IBAction func button0(sender: SpringButton) {
+        button0.animation = "flash"
+        button0.animate()
     }
+    
+    
+    
+    //    @IBAction func tapkey(sender: UILabel!){
+    //        var myDefault = NSUserDefaults.standardUserDefaults()
+    //        myDefault.setObject(mojiArray, forKey: "fontkey")
+    //    }
     
     
     

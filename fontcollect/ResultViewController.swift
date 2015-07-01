@@ -12,28 +12,33 @@ class ResultViewController: UIViewController {
 
     var correctAnswer:Int = 0
     
+    @IBOutlet var label:UILabel!
     @IBOutlet var resultTextView:UILabel!
     
     override func viewDidLoad(){
         super.viewDidLoad()
         
+        label.text = String(correctAnswer)
+        
         if(correctAnswer == 5){
-            resultTextView.text = String("全問正解！　動物マスター！")
+            resultTextView.text = String("フォントマスター！")
             
         }else if(correctAnswer == 4){
-            resultTextView.text = String("4問正解！　おしい動物マスターまでもう少し！")
+            resultTextView.text = String("おしいフォントマスターまでもう少し！")
             
         }else if(correctAnswer == 3){
-            resultTextView.text = String("3問正解! がんばって！")
+            resultTextView.text = String("がんばって！")
             
         }else if (correctAnswer == 2){
-            resultTextView.text = String("2問正解、、、　やる気あるー？")
+            resultTextView.text = String("やる気あるー？")
             
         }else if (correctAnswer==1){
-            resultTextView.text = String("1問正解、、、　やる気あるー？")
+            resultTextView.text = String("やる気あるー？")
+            
         }else if (correctAnswer==0){
-            resultTextView.text = String("1問正解、、、　出直してこいっ！！！！")
+            resultTextView.text = String("出直してこいッ！")
+            
         }
-    }
 
+}
 }
