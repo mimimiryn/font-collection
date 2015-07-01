@@ -11,9 +11,11 @@ import AudioToolbox
 
 class atumeruViewController: UIViewController {
     
-    let fontArray: NSArray = ["A1MinchoStd-Bold", "MiGoMB1Std-DeBold", "Omekashi-Font", "rounded-mplus-1p-thin", "ElmerFont", "Samurai"]
-    
-    
+//    
+//    for var i = 0; i < 8; i++ {
+//    @IBOutlet var button[i]: UIButton?
+//    }
+
     
     @IBOutlet var button0: UIButton?
     @IBOutlet var button1: UIButton?
@@ -25,46 +27,64 @@ class atumeruViewController: UIViewController {
     @IBOutlet var button7: UIButton?
     @IBOutlet var button8: UIButton?
     
+    var fontArray: NSArray = ["A1MinchoStd-Bold", "MiGoMB1Std-DeBold", "Omekashi-Font", "rounded-mplus-1p-thin", "ElmerFont", "Samurai"]
+    
+    var nameNumber0: Int!
+    var nameNumber1: Int!
+    var nameNumber2: Int!
+    var nameNumber3: Int!
+    var nameNumber4: Int!
+    var nameNumber5: Int!
+    var nameNumber6: Int!
+    var nameNumber7: Int!
+    
+    var mojiNumber0: Int!
+    var mojiNumber1: Int!
+    var mojiNumber2: Int!
+    var mojiNumber3: Int!
+    var mojiNumber4: Int!
+    var mojiNumber5: Int!
+    var mojiNumber6: Int!
+    var mojiNumber7: Int!
+    
+    var mojiArray: NSArray = ["あ","",""]
+    
+    
+    
+    
+    //        for var i = 0; i > 8; i++ {
+    //        var nameNumber = Int(arc4random_uniform(UInt32(fontArray.count))
+    //            button[i]?.titleLabel!.font = UIFont(name: fontArray[nameNumber] as! String, size: 130)
+    //
+    //        }
+    
+    //var mojiArray: NSArray = ["あ"]
+    
+    
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        @IBAction func shake(){
-            button0.animation = "shake"
-            button0.animate()
-        }
-
+        nameNumber0 = Int(arc4random_uniform(UInt32(fontArray.count)))
+        nameNumber1 = Int(arc4random_uniform(UInt32(fontArray.count)))
+        nameNumber2 = Int(arc4random_uniform(UInt32(fontArray.count)))
+        nameNumber3 = Int(arc4random_uniform(UInt32(fontArray.count)))
+        nameNumber4 = Int(arc4random_uniform(UInt32(fontArray.count)))
+        nameNumber5 = Int(arc4random_uniform(UInt32(fontArray.count)))
+        nameNumber6 = Int(arc4random_uniform(UInt32(fontArray.count)))
+        nameNumber7 = Int(arc4random_uniform(UInt32(fontArray.count)))
         
-        let fontArray: NSArray = ["A1MinchoStd-Bold", "MiGoMB1Std-DeBold", "Omekashi-Font", "rounded-mplus-1p-thin", "ElmerFont", "Samurai"]
+        mojiNumber0 = Int(arc4random_uniform(UInt32(mojiArray.count)))
+        mojiNumber1 = Int(arc4random_uniform(UInt32(mojiArray.count)))
+        mojiNumber2 = Int(arc4random_uniform(UInt32(mojiArray.count)))
+        mojiNumber3 = Int(arc4random_uniform(UInt32(mojiArray.count)))
+        mojiNumber4 = Int(arc4random_uniform(UInt32(mojiArray.count)))
+        mojiNumber5 = Int(arc4random_uniform(UInt32(mojiArray.count)))
+        mojiNumber6 = Int(arc4random_uniform(UInt32(mojiArray.count)))
+        mojiNumber7 = Int(arc4random_uniform(UInt32(mojiArray.count)))
         
-        var nameNumber0 = Int(arc4random_uniform(UInt32(fontArray.count)))
-        var nameNumber1 = Int(arc4random_uniform(UInt32(fontArray.count)))
-        var nameNumber2 = Int(arc4random_uniform(UInt32(fontArray.count)))
-        var nameNumber3 = Int(arc4random_uniform(UInt32(fontArray.count)))
-        var nameNumber4 = Int(arc4random_uniform(UInt32(fontArray.count)))
-        var nameNumber5 = Int(arc4random_uniform(UInt32(fontArray.count)))
-        var nameNumber6 = Int(arc4random_uniform(UInt32(fontArray.count)))
-        var nameNumber7 = Int(arc4random_uniform(UInt32(fontArray.count)))
-        
-        
-        //        for var i = 0; i > 8; i++ {
-        //        var nameNumber = Int(arc4random_uniform(UInt32(fontArray.count))
-        //            button[i]?.titleLabel!.font = UIFont(name: fontArray[nameNumber] as! String, size: 130)
-        //
-        //        }
-        
-        //var mojiArray: NSArray = ["あ"]
-        var mojiArray: NSArray = ["あ","",""]
-        var mojiNumber0 = Int(arc4random_uniform(UInt32(mojiArray.count)))
-        var mojiNumber1 = Int(arc4random_uniform(UInt32(mojiArray.count)))
-        var mojiNumber2 = Int(arc4random_uniform(UInt32(mojiArray.count)))
-        var mojiNumber3 = Int(arc4random_uniform(UInt32(mojiArray.count)))
-        var mojiNumber4 = Int(arc4random_uniform(UInt32(mojiArray.count)))
-        var mojiNumber5 = Int(arc4random_uniform(UInt32(mojiArray.count)))
-        var mojiNumber6 = Int(arc4random_uniform(UInt32(mojiArray.count)))
-        var mojiNumber7 = Int(arc4random_uniform(UInt32(mojiArray.count)))
         
         
         button0?.setTitle(mojiArray[mojiNumber0] as? String, forState: .Normal)
@@ -85,14 +105,18 @@ class atumeruViewController: UIViewController {
         button6?.titleLabel!.font = UIFont(name:fontArray[nameNumber6] as! String, size: 100)
         button7?.titleLabel!.font = UIFont(name:fontArray[nameNumber7] as! String, size: 95)
         
-
         
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+    }
+    @IBAction func tapkey(sender: UILabel!){
+        var myDefault = NSUserDefaults.standardUserDefaults()
+        myDefault.setObject(mojiArray, forKey: "fontkey")
     }
     
     

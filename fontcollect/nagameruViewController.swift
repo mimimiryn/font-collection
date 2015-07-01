@@ -50,7 +50,7 @@ class nagameruViewController: UIViewController, UITableViewDelegate, UITableView
         cell.name.text = "\(nameArray[indexPath.row])"
         cell.name.font = UIFont(name:fontArray[indexPath.row] as! String, size: 20)
         cell.mozi.text = "あ"
-        cell.mozi.font = UIFont(name:fontArray[indexPath.row] as! String, size: 75)
+        cell.mozi.font = UIFont(name:fontArray[indexPath.row] as! String, size: 100)
         return cell
         
     }

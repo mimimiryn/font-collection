@@ -48,6 +48,7 @@
 		7164A9CE1B4024E40032A816 /* 不正解.png in Resources */ = {isa = PBXBuildFile; fileRef = 7164A9CC1B4024E40032A816 /* 不正解.png */; };
 		7164A9D01B402A870032A816 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7164A9CF1B402A870032A816 /* ResultViewController.swift */; };
 		7164A9D21B40584A0032A816 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7164A9D11B40584A0032A816 /* AudioToolbox.framework */; };
+		716878BD1B42D03500FEB5B0 /* 正誤表示枠.png in Resources */ = {isa = PBXBuildFile; fileRef = 716878BC1B42D03500FEB5B0 /* 正誤表示枠.png */; };
 		7185E56A1B325933005A7E3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185E5691B325933005A7E3B /* AppDelegate.swift */; };
 		7185E56C1B325933005A7E3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185E56B1B325933005A7E3B /* ViewController.swift */; };
 		7185E56F1B325933005A7E3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7185E56D1B325933005A7E3B /* Main.storyboard */; };
@@ -119,6 +120,7 @@
 		7164A9CC1B4024E40032A816 /* 不正解.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "不正解.png"; sourceTree = "<group>"; };
 		7164A9CF1B402A870032A816 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		7164A9D11B40584A0032A816 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		716878BC1B42D03500FEB5B0 /* 正誤表示枠.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "正誤表示枠.png"; path = "../正誤表示枠.png"; sourceTree = "<group>"; };
 		7185E5641B325933005A7E3B /* fontcollect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fontcollect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7185E5681B325933005A7E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7185E5691B325933005A7E3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 			children = (
 				7164A9CB1B4024E40032A816 /* 正解.png */,
 				7164A9CC1B4024E40032A816 /* 不正解.png */,
+				716878BC1B42D03500FEB5B0 /* 正誤表示枠.png */,
 				7105DBD61B3D462600ED9C9B /* フォント素材 */,
 				7105DB981B3BD66D00ED9C9B /* ボタン枠長.png */,
 				71C8A0E31B3BB2C00017D1EC /* 紙.png */,
@@ -356,6 +359,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				716878BD1B42D03500FEB5B0 /* 正誤表示枠.png in Resources */,
 				7105DBE91B3E679D00ED9C9B /* さむらい in Resources */,
 				7105DBE31B3E66EE00ED9C9B /* A-OTF 見出ゴMB1 Std DeBold.otf in Resources */,
 				7105DBE41B3E66EE00ED9C9B /* A-OTF-A1明朝Std-Bold.otf in Resources */,

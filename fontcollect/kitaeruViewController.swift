@@ -30,10 +30,22 @@ class kitaeruViewController: UIViewController {
     //正解数
     var correctAnswer:Int = 0
     
-    @IBOutlet var seikai: UIImageView!
+    //@IBOutlet var seikai: UIImageView!
     
     //何番目ボタンに正解を入れるか
     var correctNumber = Int(arc4random_uniform(UInt32(2)))
+    
+    @IBOutlet var wakuhaikei: UIImageView!
+    @IBOutlet var seigomoji: UILabel!
+    @IBOutlet var seigoname: UILabel!
+    @IBOutlet var nextquiz: UIButton!
+    @IBOutlet var seigoimage: UIImageView!
+    @IBOutlet var seigo: UILabel!
+    
+    //var nameNumber: Int = 0
+    //var rondom: Int = 0
+    
+    var nameNumber = Int(arc4random_uniform(UInt32(5)))
     
     
     
@@ -41,28 +53,23 @@ class kitaeruViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        seikai.hidden = true
+        wakuhaikei.hidden = true
+        seigomoji.hidden = true
+        seigoname.hidden = true
+        nextquiz.hidden = true
+        seigoimage.hidden = true
+        seigo.hidden = true
         
         choiceQuiz()
-        
     }
-    
     
     func choiceQuiz(){
         myLabel2.text = "あ"
         
         //正解フォント選ぶ
-        var nameNumber = Int(arc4random_uniform(UInt32(fontArray.count)))
-        
+        //var nameNumber = Int(arc4random_uniform(UInt32(fontArray.count)))
         //そのフォントで文字を書く
         myLabel2.font = UIFont(name:fontArray[nameNumber], size: 130)
-        
-        
-        
-        //        correctNumber.setTitle("choiceButton[correctNumber]", forState: UIControlState.Normal) =
-        //            nameNumber.setTitle("nameArray[nameNumber]", forState: UIControlState.Normal)
-        
-        //choiceButton[correctNumber] = nameArray[nameNumber]
         
         var nameArrray2 = nameArray
         nameArrray2.removeAtIndex(nameNumber)
@@ -84,40 +91,51 @@ class kitaeruViewController: UIViewController {
     @IBAction func choiceAnswer(sender: UIButton) {
         sum++
         println("random \(random)")
+        
+        seigomoji.text = "あ"
+        seigomoji.font = UIFont(name:fontArray[nameNumber], size: 100)
+        seigoname.text = nameArray[nameNumber]
+        seigoname.font = UIFont(name:fontArray[nameNumber], size: 15)
+        
+        
+        wakuhaikei.hidden = false
+        seigomoji.hidden = false
+        seigoname.hidden = false
+        nextquiz.hidden = false
+        seigoimage.hidden = false
+        seigo.hidden = false
+        
         if correctNumber as Int == sender.tag {
             
-            seikai.hidden = false
-            
             let img = UIImage(named:"正解.png")
-            seikai!.image = img
-            
-            
+            seigoimage.image = img
+            seigo.text = "正解！"
             
             //正解数を増やす
             correctAnswer++
+            
         }else{
             
-            seikai.hidden = false
-            
             let img = UIImage(named:"不正解.png")
-            seikai!.image = img
-            
+            seigoimage.image = img
+            seigo.text = "不正解！"
         }
         
-        
-        //正解とかみせるプログラム入れる
-        
-        if sum == questionNumber {
-            performSegueToResult()
+        if self.sum == self.questionNumber {
+            self.performSegueToResult()
         }
-        //nameNumber.removeAtIndex(random())
+        //self.myLabel2.removeAtIndex(self.nameNumber)
         choiceQuiz()
-        seikai.hidden = true
-        
-        //  }
     }
     
-    
+    internal func onClickNMyButton(sender: UIButton!){
+        wakuhaikei.hidden = true
+        seigomoji.hidden = true
+        seigoname.hidden = true
+        nextquiz.hidden = true
+        seigoimage.hidden = true
+        seigo.hidden = true
+    }
     
     func performSegueToResult() {
         performSegueWithIdentifier("toResultView", sender: nil)
@@ -132,17 +150,18 @@ class kitaeruViewController: UIViewController {
         }
     }
     
-        
-        
-        
-        
-        
-        
-        override func didReceiveMemoryWarning() {
-            super.didReceiveMemoryWarning()
-            // Dispose of any resources that can be recreated.
-        }
-        
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    
+    
+    
+    
+    
+    
 }
 
 
