@@ -97,6 +97,9 @@ class atumeruViewController: UIViewController {
         
         button0.animation = "flash"
         button0.animate()
+        
+        button0.animation = "fadeOut"
+        button0.animate()
     }
     
     @IBAction func button1(sender: SpringButton) {
@@ -104,6 +107,9 @@ class atumeruViewController: UIViewController {
         appDelegate.okuru1 = nameNumber1 //appDelegateの変数を操作
         
         button1.animation = "flash"
+        button1.animate()
+        
+        button1.animation = "fadeOut"
         button1.animate()
     }
 
@@ -113,6 +119,9 @@ class atumeruViewController: UIViewController {
         
         button2.animation = "flash"
         button2.animate()
+        
+        button2.animation = "fadeOut"
+        button2.animate()
     }
 
     @IBAction func button3(sender: SpringButton) {
@@ -121,6 +130,9 @@ class atumeruViewController: UIViewController {
         
         button3.animation = "flash"
         button3.animate()
+        
+        button3.animation = "fadeOut"
+        button3.animate()
     }
 
     @IBAction func button4(sender: SpringButton) {
@@ -128,6 +140,9 @@ class atumeruViewController: UIViewController {
         appDelegate.okuru4 = nameNumber4 //appDelegateの変数を操作
         
         button4.animation = "flash"
+        button4.animate()
+        
+        button4.animation = "fadeOut"
         button4.animate()
     }
 
@@ -138,6 +153,11 @@ class atumeruViewController: UIViewController {
         
         button5.animation = "flash"
         button5.animate()
+        
+        button5.animation = "fadeOut"
+        button5.animate()
+        
+        
     }
 
     @IBAction func button6(sender: SpringButton) {
@@ -146,6 +166,11 @@ class atumeruViewController: UIViewController {
         
         button6.animation = "flash"
         button6.animate()
+        
+        button6.animation = "fadeOut"
+        button6.animate()
+        
+        
     }
 
     @IBAction func button7(sender: SpringButton) {
@@ -154,14 +179,12 @@ class atumeruViewController: UIViewController {
         
         button7.animation = "flash"
         button7.animate()
+        
+        button7.animation = "fadeOut"
+        button7.animate()
     }
 
 
-    
-    
-    
-    
-    
     
     //    @IBAction func tapkey(sender: UILabel!){
     //        var myDefault = NSUserDefaults.standardUserDefaults()

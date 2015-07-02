@@ -19,11 +19,32 @@ class nagameruViewController: UIViewController, UITableViewDelegate, UITableView
     var fontNumber26 : Int?
     var fontNumber27 : Int?
     
-    var fontArray0 :String!
+    var font0 :String?
+    var font1 :String?
+    var font2 :String?
+    var font3 :String?
+    var font4 :String?
+    var font5 :String?
+    var font6 :String?
+    var font7 :String?
     
     
     
-    override func viewWillAppear(animated: Bool) {
+    var nameArray: NSArray = ["見出ゴMB1","A1 明朝","おめかし","round-mplus-1p-thin","えるまー","さむらい"]
+    var fontArray: NSArray = ["A1MinchoStd-Bold", "MiGoMB1Std-DeBold", "Omekashi-Font", "rounded-mplus-1p-thin", "ElmerFont", "Samurai"]
+    
+    //let explainArray: NSArray = ["","綺麗"]
+    
+    @IBOutlet var tableView: UITableView!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
         fontNumber20 = appDelegate.okuru0
         fontNumber21 = appDelegate.okuru1
@@ -34,24 +55,15 @@ class nagameruViewController: UIViewController, UITableViewDelegate, UITableView
         fontNumber26 = appDelegate.okuru6
         fontNumber27 = appDelegate.okuru7
         
-    }
-    
-    
-    @IBOutlet var tableView: UITableView!
-    
-    var nameArray: NSArray = ["見出ゴMB1","A1 明朝","おめかし","round-mplus-1p-thin","えるまー","さむらい"]
-    var fontArray: NSArray = ["A1MinchoStd-Bold", "MiGoMB1Std-DeBold", "Omekashi-Font", "rounded-mplus-1p-thin", "ElmerFont", "Samurai"]
-    
-    //let explainArray: NSArray = ["","綺麗"]
-    
-    fontArray0 = fontArray[fontNumber20]
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        font0 = fontArray[fontNumber20!] as? String
+        font1 = fontArray[fontNumber21!] as? String
+        font2 = fontArray[fontNumber22!] as? String
+        font3 = fontArray[fontNumber23!] as? String
+        font4 = fontArray[fontNumber24!] as? String
+        font5 = fontArray[fontNumber25!] as? String
+        font6 = fontArray[fontNumber26!] as? String
+        font7 = fontArray[fontNumber27!] as? String
         
-        tableView.dataSource = self
-        tableView.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -77,16 +89,73 @@ class nagameruViewController: UIViewController, UITableViewDelegate, UITableView
         cell.name.text = "\(nameArray[indexPath.row])"
         cell.name.font = UIFont(name:fontArray[indexPath.row] as! String, size: 20)
         
-        cell.mozi.text = "あ"
-        //cell2.mozi.text = "あ"
-        cell.mozi.font = UIFont(name:fontArray[indexPath.row] as! String, size: 100)
-        cell.mozi.font = UIFont(name:fontArray0[fontNumber20] as! String, size: 100)
-        //cell.mozi.font = UIFont(name:fontArray[indexPath.fontNumber20] as! String, size: 100)
         
-        return cell
+        if indexPath.row==fontNumber20{
+            
+            cell.mozi.text = "あ"
+            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as! String, size: 100)
+            return cell
+            
+        }else if indexPath.row==fontNumber21{
+            
+            cell.mozi.text = "あ"
+            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as! String, size: 100)
+            return cell
+            
+        }else if indexPath.row==fontNumber22{
+            
+            cell.mozi.text = "あ"
+            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as! String, size: 100)
+            return cell
+            
+        }else if indexPath.row==fontNumber23{
+            
+            cell.mozi.text = "あ"
+            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as! String, size: 100)
+            return cell
+            
+        }
+        else if indexPath.row==fontNumber24{
+            
+            cell.mozi.text = "あ"
+            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as! String, size: 100)
+            return cell
+            
+        }
+        else if indexPath.row==fontNumber25{
+            
+            cell.mozi.text = "あ"
+            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as! String, size: 100)
+            return cell
+            
+        }
+        else if indexPath.row==fontNumber26{
+            
+            cell.mozi.text = "あ"
+            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as! String, size: 100)
+            return cell
+            
+        }else if indexPath.row==fontNumber27{
+            
+            cell.mozi.text = "あ"
+            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as! String, size: 100)
+            return cell
+            
+        }
+       return cell
         
-    }
+    }}
     
-    
-    
-}
+        
+        //        cell.mozi.text = "あ"
+        //        cell.mozi.font = UIFont(name:(fontArray[indexPath.row] as? String)!, size: 100)
+        //        return cell
+        
+        //        cell.mozi.font = UIFont(name:(font0[fontNumber20!] as? String)!, size: 100)
+        //        cell.mozi.font = UIFont(name:(font1[fontNumber21!] as? String)!, size: 100)
+        //        cell.mozi.font = UIFont(name:(font2[fontNumber22!] as? String)!, size: 100)
+        //        cell.mozi.font = UIFont(name:(font3[fontNumber23!] as? String)!, size: 100)
+        //        cell.mozi.font = UIFont(name:(font4[fontNumber24!] as? String)!, size: 100)
+        //        cell.mozi.font = UIFont(name:(font5[fontNumber25!] as? String)!, size: 100)
+        //        cell.mozi.font = UIFont(name:(font6[fontNumber26!] as? String)!, size: 100)
+        //        cell.mozi.font = UIFont(name:(font7[fontNumber27!] as? String)!, size: 100)
