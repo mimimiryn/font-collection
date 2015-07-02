@@ -10,24 +10,41 @@ import UIKit
 
 class nagameruViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var fontNumber20 : Int?
+    var fontNumber21 : Int?
+    var fontNumber22 : Int?
+    var fontNumber23 : Int?
+    var fontNumber24 : Int?
+    var fontNumber25 : Int?
+    var fontNumber26 : Int?
+    var fontNumber27 : Int?
+    
+    var fontArray0 :String!
+    
+    
+    
     override func viewWillAppear(animated: Bool) {
-//        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
-//        var messages = appDelegate.message
-        
-       // println(messages)
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
-        var fontNumber2 = appDelegate.okuru
+        fontNumber20 = appDelegate.okuru0
+        fontNumber21 = appDelegate.okuru1
+        fontNumber22 = appDelegate.okuru2
+        fontNumber23 = appDelegate.okuru3
+        fontNumber24 = appDelegate.okuru4
+        fontNumber25 = appDelegate.okuru5
+        fontNumber26 = appDelegate.okuru6
+        fontNumber27 = appDelegate.okuru7
         
-        println(fontNumber2)
     }
-
+    
     
     @IBOutlet var tableView: UITableView!
     
-    let nameArray: NSArray = ["見出ゴMB1","A1 明朝","おめかし","round-mplus-1p-thin","えるまー","さむらい"]
-    let fontArray: NSArray = ["A1MinchoStd-Bold", "MiGoMB1Std-DeBold", "Omekashi-Font", "rounded-mplus-1p-thin", "ElmerFont", "Samurai"]
+    var nameArray: NSArray = ["見出ゴMB1","A1 明朝","おめかし","round-mplus-1p-thin","えるまー","さむらい"]
+    var fontArray: NSArray = ["A1MinchoStd-Bold", "MiGoMB1Std-DeBold", "Omekashi-Font", "rounded-mplus-1p-thin", "ElmerFont", "Samurai"]
     
     //let explainArray: NSArray = ["","綺麗"]
+    
+    fontArray0 = fontArray[fontNumber20]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,13 +74,15 @@ class nagameruViewController: UIViewController, UITableViewDelegate, UITableView
         //        cell.textLabel?.text = "あ"
         self.tableView.rowHeight = 152
         
-        
         cell.name.text = "\(nameArray[indexPath.row])"
         cell.name.font = UIFont(name:fontArray[indexPath.row] as! String, size: 20)
+        
         cell.mozi.text = "あ"
-//        cell.mozi.font = UIFont(name:fontArray[indexPath.row] as! String, size: 100)
-        //cell.mozi.font = UIFont(name:fontArray[fontNumber2] as! String, size: 100)
-
+        //cell2.mozi.text = "あ"
+        cell.mozi.font = UIFont(name:fontArray[indexPath.row] as! String, size: 100)
+        cell.mozi.font = UIFont(name:fontArray0[fontNumber20] as! String, size: 100)
+        //cell.mozi.font = UIFont(name:fontArray[indexPath.fontNumber20] as! String, size: 100)
+        
         return cell
         
     }

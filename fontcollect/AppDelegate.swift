@@ -13,7 +13,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    var okuru: Int!
+    var okuru0: Int?
+    var okuru1: Int?
+    var okuru2: Int?
+    var okuru3: Int?
+    var okuru4: Int?
+    var okuru5: Int?
+    var okuru6: Int?
+    var okuru7: Int?
+    
 //var message: String!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {

@@ -92,15 +92,72 @@ class atumeruViewController: UIViewController {
     }
     
     @IBAction func button0(sender: SpringButton) {
-//        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
-//        appDelegate.message = "messages" //appDelegateの変数を操作
-
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
-        appDelegate.okuru = nameNumber0 //appDelegateの変数を操作
+        appDelegate.okuru0 = nameNumber0 //appDelegateの変数を操作
         
         button0.animation = "flash"
         button0.animate()
     }
+    
+    @IBAction func button1(sender: SpringButton) {
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
+        appDelegate.okuru1 = nameNumber1 //appDelegateの変数を操作
+        
+        button1.animation = "flash"
+        button1.animate()
+    }
+
+    @IBAction func button2(sender: SpringButton) {
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
+        appDelegate.okuru2 = nameNumber2 //appDelegateの変数を操作
+        
+        button2.animation = "flash"
+        button2.animate()
+    }
+
+    @IBAction func button3(sender: SpringButton) {
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
+        appDelegate.okuru3 = nameNumber3 //appDelegateの変数を操作
+        
+        button3.animation = "flash"
+        button3.animate()
+    }
+
+    @IBAction func button4(sender: SpringButton) {
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
+        appDelegate.okuru4 = nameNumber4 //appDelegateの変数を操作
+        
+        button4.animation = "flash"
+        button4.animate()
+    }
+
+    
+    @IBAction func button5(sender: SpringButton) {
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
+        appDelegate.okuru5 = nameNumber5 //appDelegateの変数を操作
+        
+        button5.animation = "flash"
+        button5.animate()
+    }
+
+    @IBAction func button6(sender: SpringButton) {
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
+        appDelegate.okuru6 = nameNumber6 //appDelegateの変数を操作
+        
+        button6.animation = "flash"
+        button6.animate()
+    }
+
+    @IBAction func button7(sender: SpringButton) {
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
+        appDelegate.okuru7 = nameNumber7 //appDelegateの変数を操作
+        
+        button7.animation = "flash"
+        button7.animate()
+    }
+
+
+    
     
     
     
