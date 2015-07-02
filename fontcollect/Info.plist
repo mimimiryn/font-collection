@@ -26,10 +26,32 @@
 	<array>
 		<string>A-OTF 見出ゴMB1 Std DeBold.otf</string>
 		<string>A-OTF-A1明朝Std-Bold.otf</string>
+		<string>やさしさゴシック.ttf</string>
 		<string>rounded-mplus-1p-thin.ttf</string>
 		<string>おめかし.ttf</string>
-		<string>さむらい</string>
+		<string>A=OTF-FolkPro-Medium.otf</string>
 		<string>えるまー.ttf</string>
+		<string>A-OTF-FutoGoB101Pro-Bold.otf</string>
+		<string>A-OTF-FutoMinA101Pro-Medium.otf</string>
+		<string>A-OTF-GothicMB101Pro-Medium.otf</string>
+		<string>A-OTF-HaruGakuStd-Light.otf</string>
+		<string>A-OTF-Jum501Pro-Bold_0.otf</string>
+		<string>A-OTF-MaruFoPro-Regular.otf</string>
+		<string>A-OTF-RyuminPro-Regular.otf</string>
+		<string>A-OTF-UDShinGoPro-Regular.otf</string>
+		<string>A-OTF-UDShinMGoPto-Regular.otf</string>
+		<string>cinecaption226.otf</string>
+		<string>ＤＣＰひげ文字W5</string>
+		<string>DF-KinBun-W3.ttc</string>
+		<string>Hannari.otf</string>
+		<string>KozGoPro-Regular.otf</string>
+		<string>KozMinPro-Regular.otf</string>
+		<string>UtsukushiFONT.otf</string>
+		<string>A-OTF-KyokaICAPro-Medium_0.otf</string>
+		<string>uzura.ttf</string>
+		<string>ヒラギノ角ゴ Std W6.otf</string>
+		<string></string>
+		<string></string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>

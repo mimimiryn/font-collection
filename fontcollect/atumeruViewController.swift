@@ -20,7 +20,10 @@ class atumeruViewController: UIViewController {
     @IBOutlet weak var button7: SpringButton!
     
     
-    var fontArray: NSArray = ["A1MinchoStd-Bold", "MiGoMB1Std-DeBold", "Omekashi-Font", "rounded-mplus-1p-thin", "ElmerFont", "Samurai"]
+//    var nameArray: NSArray = ["やさしさゴシック","見出ゴMB1 Std","A1明朝","フォークPro","太ゴシックB101","太明朝A101","ゴシックMB101","はるひ学園じゅん501","教科書ICA Pro","丸フォークPro","リュウミンProUD新ゴ Pro","UD新丸ゴ Pro","しねきゃぷしょん",
+//    "ＤＦ金文体W3","はんなり明朝","小塚ゴシック Pro","小塚明朝 Pro","うつくし明朝体","うずら","ヒラギノ角ゴ Std"]
+
+    var fontArray: NSArray = ["07YasashisaGothic","MiGoMB1Std-DeBold","A1MinchoStd-Bold","FolkPro-Regular","FutoGoB101Pro-Bold","FutoMinA101Pro-Bold","GothicMB101Pro-Medium","HaruGakuStd-Light","Jun501Pro-Bold","KyokaICAPro-Medium","MaruFoPro-Regular","RyuminPro-Regular","UDShinGoPro-Regular","UDShinMGoPro-Regular","cinecaption","DFKinBun-W3-WIN-RKSJ-H","HannariMincho","KozGoPro-Regular","KozMinPro-Regular","02UtsukushiMincho","uzura_font","HiraKakuStd-W6"]
     
     var nameNumber0: Int!
     var nameNumber1: Int!
