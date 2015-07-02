@@ -54,6 +54,16 @@ class atumeruViewController: UIViewController {
         nameNumber6 = Int(arc4random_uniform(UInt32(fontArray.count)))
         nameNumber7 = Int(arc4random_uniform(UInt32(fontArray.count)))
         
+        println(nameNumber0)
+        println(nameNumber1)
+        println(nameNumber2)
+        println(nameNumber3)
+        println(nameNumber4)
+        println(nameNumber5)
+        println(nameNumber6)
+        println(nameNumber7)
+        
+        
         mojiNumber0 = Int(arc4random_uniform(UInt32(mojiArray.count)))
         mojiNumber1 = Int(arc4random_uniform(UInt32(mojiArray.count)))
         mojiNumber2 = Int(arc4random_uniform(UInt32(mojiArray.count)))
@@ -100,6 +110,9 @@ class atumeruViewController: UIViewController {
         
         button0.animation = "fadeOut"
         button0.animate()
+        
+        println(appDelegate.okuru0)
+        
     }
     
     @IBAction func button1(sender: SpringButton) {
@@ -111,6 +124,8 @@ class atumeruViewController: UIViewController {
         
         button1.animation = "fadeOut"
         button1.animate()
+        
+                println(appDelegate.okuru1)
     }
 
     @IBAction func button2(sender: SpringButton) {
@@ -122,6 +137,8 @@ class atumeruViewController: UIViewController {
         
         button2.animation = "fadeOut"
         button2.animate()
+        
+                println(appDelegate.okuru2)
     }
 
     @IBAction func button3(sender: SpringButton) {
@@ -133,6 +150,8 @@ class atumeruViewController: UIViewController {
         
         button3.animation = "fadeOut"
         button3.animate()
+        
+                println(appDelegate.okuru3)
     }
 
     @IBAction func button4(sender: SpringButton) {
@@ -144,8 +163,9 @@ class atumeruViewController: UIViewController {
         
         button4.animation = "fadeOut"
         button4.animate()
+        
+                println(appDelegate.okuru4)
     }
-
     
     @IBAction func button5(sender: SpringButton) {
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate //AppDelegateのインスタンスを取得
@@ -156,6 +176,8 @@ class atumeruViewController: UIViewController {
         
         button5.animation = "fadeOut"
         button5.animate()
+        
+                println(appDelegate.okuru5)
         
         
     }
@@ -170,6 +192,8 @@ class atumeruViewController: UIViewController {
         button6.animation = "fadeOut"
         button6.animate()
         
+                println(appDelegate.okuru6)
+        
         
     }
 
@@ -182,6 +206,8 @@ class atumeruViewController: UIViewController {
         
         button7.animation = "fadeOut"
         button7.animate()
+        
+                println(appDelegate.okuru7)
     }
 
 
