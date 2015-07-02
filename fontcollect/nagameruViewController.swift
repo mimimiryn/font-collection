@@ -29,11 +29,10 @@ class nagameruViewController: UIViewController, UITableViewDelegate, UITableView
     //    var font7 :String?
     
     
+        
+    var nameArray = ["えるまー","見出ゴMB1 Std","A1明朝","おめかし","太ゴシックB101","ゴシックMB101","はるひ学園","教科書ICA Pro","丸フォークPro","リュウミンPro","UD新ゴ Pro","しねきゃぷしょん","ＤＦ金文体W3","はんなり明朝","小塚ゴシック Pro","小塚明朝 Pro","うつくし明朝体","うずら","ヒラギノ角ゴ Std"]
     
-    var nameArray: NSArray = ["やさしさゴシック","見出ゴMB1 Std","A1明朝","フォークPro","太ゴシックB101","太明朝A101","ゴシックMB101","はるひ学園","じゅん501","教科書ICA Pro","丸フォークPro","リュウミンPro","UD新ゴ Pro","UD新丸ゴ Pro","しねきゃぷしょん","ＤＦ金文体W3","はんなり明朝","小塚ゴシック Pro","小塚明朝 Pro","うつくし明朝体","うずら","ヒラギノ角ゴ Std"]
-    var fontArray = ["07YasashisaGothic","MiGoMB1Std-DeBold","A1MinchoStd-Bold","FolkPro-Regular","FutoGoB101Pro-Bold","FutoMinA101Pro-Bold","GothicMB101Pro-Medium","HaruGakuStd-Light","Jun501Pro-Bold","KyokaICAPro-Medium","MaruFoPro-Regular","RyuminPro-Regular","UDShinGoPro-Regular","UDShinMGoPro-Regular","cinecaption","DFKinBun-W3-WIN-RKSJ-H","HannariMincho","KozGoPro-Regular","KozMinPro-Regular","02UtsukushiMincho","uzura_font","HiraKakuStd-W6"]
-    
-    //let explainArray: NSArray = ["","綺麗"]
+    var fontArray = ["ElmerFont","MiGoMB1Std-DeBold","A1MinchoStd-Bold","Omekashi-Font","FutoGoB101Pro-Bold","GothicMB101Pro-Medium","HaruGakuStd-Light","KyokaICAPro-Medium","MaruFoPro-Regular","RyuminPro-Regular","UDShinGoPro-Regular","cinecaption","DFKinBun-W3-WIN-RKSJ-H","HannariMincho","KozGoPro-Regular","KozMinPro-Regular","02UtsukushiMincho","uzura_font","HiraKakuStd-W6"]
     
     @IBOutlet var tableView: UITableView!
     
@@ -83,7 +82,7 @@ class nagameruViewController: UIViewController, UITableViewDelegate, UITableView
     
     //セルの数
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 21
+        return 18
         
         
     }
@@ -99,45 +98,53 @@ class nagameruViewController: UIViewController, UITableViewDelegate, UITableView
         
         cell.name.text = "\(nameArray[indexPath.row])"
         cell.name.font = UIFont(name:fontArray[indexPath.row] as String, size: 20)
+        cell.mozi.text = "あ"
         
-        if fontNumber20==indexPath.row{
-            cell.mozi.text = "あ"
-            
-            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
-            
-            //println(fontNumber20)
-        }else if fontNumber21==indexPath.row{
-            cell.mozi.text = "あ"
-            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
-            //println(fontNumber21)
-        }else if fontNumber22==indexPath.row{
-            cell.mozi.text = "あ"
-            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
-            //println(fontNumber22)
-        }else if fontNumber23==indexPath.row{
-            cell.mozi.text = "あ"
-            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
-            //println(fontNumber23)
-        }
-        else if fontNumber24==indexPath.row{
-            cell.mozi.text = "あ"
-            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
-            //println(fontNumber24)
-        }
-        else if indexPath.row==fontNumber25{
-            cell.mozi.text = "あ"
-            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
-            //println(fontNumber25)
-        }
-        else if fontNumber26==indexPath.row{
-            cell.mozi.text = "あ"
-            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
-            //println(fontNumber26)
-        }else if fontNumber27==indexPath.row{
-            cell.mozi.text = "あ"
-            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
-            //println(fontNumber27)
-        }
+        cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
+        
+        
+        //        if fontNumber20==indexPath.row{
+        //            cell.mozi.text = "あ"
+        //
+        //            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
+        //
+        //            //println(fontNumber20)
+        //
+        //        }else if fontNumber21==indexPath.row{
+        //            cell.mozi.text = "あ"
+        //            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
+        //            //println(fontNumber21)
+        //
+        //        }else if fontNumber22==indexPath.row{
+        //            cell.mozi.text = "あ"
+        //            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
+        //            //println(fontNumber22)
+        //
+        //        }else if fontNumber23==indexPath.row{
+        //            cell.mozi.text = "あ"
+        //            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
+        //            //println(fontNumber23)
+        //
+        //        }else if fontNumber24==indexPath.row{
+        //            cell.mozi.text = "あ"
+        //            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
+        //            //println(fontNumber24)
+        //
+        //        }else if indexPath.row==fontNumber25{
+        //            cell.mozi.text = "あ"
+        //            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
+        //            //println(fontNumber25)
+        //
+        //        }else if fontNumber26==indexPath.row{
+        //            cell.mozi.text = "あ"
+        //            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
+        //            //println(fontNumber26)
+        //        
+        //        }else if fontNumber27==indexPath.row{
+        //            cell.mozi.text = "あ"
+        //            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
+        //            //println(fontNumber27)
+        //        }
         return cell
         
     }}

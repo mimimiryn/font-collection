@@ -19,11 +19,12 @@ class atumeruViewController: UIViewController {
     @IBOutlet weak var button6: SpringButton!
     @IBOutlet weak var button7: SpringButton!
     
-    
-//    var nameArray: NSArray = ["やさしさゴシック","見出ゴMB1 Std","A1明朝","フォークPro","太ゴシックB101","太明朝A101","ゴシックMB101","はるひ学園じゅん501","教科書ICA Pro","丸フォークPro","リュウミンProUD新ゴ Pro","UD新丸ゴ Pro","しねきゃぷしょん",
-//    "ＤＦ金文体W3","はんなり明朝","小塚ゴシック Pro","小塚明朝 Pro","うつくし明朝体","うずら","ヒラギノ角ゴ Std"]
 
-    var fontArray: NSArray = ["07YasashisaGothic","MiGoMB1Std-DeBold","A1MinchoStd-Bold","FolkPro-Regular","FutoGoB101Pro-Bold","FutoMinA101Pro-Bold","GothicMB101Pro-Medium","HaruGakuStd-Light","Jun501Pro-Bold","KyokaICAPro-Medium","MaruFoPro-Regular","RyuminPro-Regular","UDShinGoPro-Regular","UDShinMGoPro-Regular","cinecaption","DFKinBun-W3-WIN-RKSJ-H","HannariMincho","KozGoPro-Regular","KozMinPro-Regular","02UtsukushiMincho","uzura_font","HiraKakuStd-W6"]
+//    
+//    var nameArray = ["えるまー","見出ゴMB1 Std","A1明朝","おめかし","フォークPro","太ゴシックB101","太明朝A101","ゴシックMB101","はるひ学園","じゅん501","教科書ICA Pro","丸フォークPro","リュウミンPro","UD新ゴ Pro","UD新丸ゴ Pro","しねきゃぷしょん","ＤＦ金文体W3","はんなり明朝","小塚ゴシック Pro","小塚明朝 Pro","うつくし明朝体","うずら","ヒラギノ角ゴ Std"]
+    
+    var fontArray = ["ElmerFont","MiGoMB1Std-DeBold","A1MinchoStd-Bold","Omekashi-Font","FutoGoB101Pro-Bold","GothicMB101Pro-Medium","HaruGakuStd-Light","KyokaICAPro-Medium","MaruFoPro-Regular","RyuminPro-Regular","UDShinGoPro-Regular","cinecaption","DFKinBun-W3-WIN-RKSJ-H","HannariMincho","KozGoPro-Regular","KozMinPro-Regular","02UtsukushiMincho","uzura_font","HiraKakuStd-W6"]
+    
     
     var nameNumber0: Int!
     var nameNumber1: Int!
@@ -86,14 +87,14 @@ class atumeruViewController: UIViewController {
         button6?.setTitle(mojiArray[mojiNumber6] as? String, forState: .Normal)
         button7?.setTitle(mojiArray[mojiNumber7] as? String, forState: .Normal)
         
-        button0?.titleLabel!.font = UIFont(name:fontArray[nameNumber0] as! String, size: 100)
-        button1?.titleLabel!.font = UIFont(name:fontArray[nameNumber1] as! String, size: 40)
-        button2?.titleLabel!.font = UIFont(name:fontArray[nameNumber2] as! String, size: 30)
-        button3?.titleLabel!.font = UIFont(name:fontArray[nameNumber3] as! String, size: 50)
-        button4?.titleLabel!.font = UIFont(name:fontArray[nameNumber4] as! String, size: 50)
-        button5?.titleLabel!.font = UIFont(name:fontArray[nameNumber5] as! String, size: 45)
-        button6?.titleLabel!.font = UIFont(name:fontArray[nameNumber6] as! String, size: 100)
-        button7?.titleLabel!.font = UIFont(name:fontArray[nameNumber7] as! String, size: 95)
+        button0?.titleLabel!.font = UIFont(name:fontArray[nameNumber0] as String, size: 100)
+        button1?.titleLabel!.font = UIFont(name:fontArray[nameNumber1] as String, size: 40)
+        button2?.titleLabel!.font = UIFont(name:fontArray[nameNumber2] as String, size: 30)
+        button3?.titleLabel!.font = UIFont(name:fontArray[nameNumber3] as String, size: 50)
+        button4?.titleLabel!.font = UIFont(name:fontArray[nameNumber4] as String, size: 50)
+        button5?.titleLabel!.font = UIFont(name:fontArray[nameNumber5] as String, size: 45)
+        button6?.titleLabel!.font = UIFont(name:fontArray[nameNumber6] as String, size: 100)
+        button7?.titleLabel!.font = UIFont(name:fontArray[nameNumber7] as String, size: 95)
         
         
         // Do any additional setup after loading the view.
