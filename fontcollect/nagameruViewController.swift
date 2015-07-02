@@ -98,53 +98,55 @@ class nagameruViewController: UIViewController, UITableViewDelegate, UITableView
         
         cell.name.text = "\(nameArray[indexPath.row])"
         cell.name.font = UIFont(name:fontArray[indexPath.row] as String, size: 20)
-        cell.mozi.text = "あ"
+        //cell.mozi.text = "あ"
         
-        cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
+        //cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
         
         
-        //        if fontNumber20==indexPath.row{
-        //            cell.mozi.text = "あ"
-        //
-        //            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
-        //
-        //            //println(fontNumber20)
-        //
-        //        }else if fontNumber21==indexPath.row{
-        //            cell.mozi.text = "あ"
-        //            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
-        //            //println(fontNumber21)
-        //
-        //        }else if fontNumber22==indexPath.row{
-        //            cell.mozi.text = "あ"
-        //            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
-        //            //println(fontNumber22)
-        //
-        //        }else if fontNumber23==indexPath.row{
-        //            cell.mozi.text = "あ"
-        //            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
-        //            //println(fontNumber23)
-        //
-        //        }else if fontNumber24==indexPath.row{
-        //            cell.mozi.text = "あ"
-        //            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
-        //            //println(fontNumber24)
-        //
-        //        }else if indexPath.row==fontNumber25{
-        //            cell.mozi.text = "あ"
-        //            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
-        //            //println(fontNumber25)
-        //
-        //        }else if fontNumber26==indexPath.row{
-        //            cell.mozi.text = "あ"
-        //            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
-        //            //println(fontNumber26)
-        //        
-        //        }else if fontNumber27==indexPath.row{
-        //            cell.mozi.text = "あ"
-        //            cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
-        //            //println(fontNumber27)
-        //        }
+                if fontNumber20==indexPath.row{
+                    cell.mozi.text = "あ"
+        
+                    cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
+        
+                    //println(fontNumber20)
+        
+                }else if fontNumber21==indexPath.row{
+                    cell.mozi.text = "あ"
+                    cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
+                    //println(fontNumber21)
+        
+                }else if fontNumber22==indexPath.row{
+                    cell.mozi.text = "あ"
+                    cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
+                    //println(fontNumber22)
+        
+                }else if fontNumber23==indexPath.row{
+                    cell.mozi.text = "あ"
+                    cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
+                    //println(fontNumber23)
+        
+                }else if fontNumber24==indexPath.row{
+                    cell.mozi.text = "あ"
+                    cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
+                    //println(fontNumber24)
+        
+                }else if indexPath.row==fontNumber25{
+                    cell.mozi.text = "あ"
+                    cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
+                    //println(fontNumber25)
+        
+                }else if fontNumber26==indexPath.row{
+                    cell.mozi.text = "あ"
+                    cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
+                    //println(fontNumber26)
+                
+                }else if fontNumber27==indexPath.row{
+                    cell.mozi.text = "あ"
+                    cell.mozi.font = UIFont(name:fontArray[indexPath.row] as String, size: 100)
+                    //println(fontNumber27)
+                }else{
+        return cell
+        }
         return cell
         
     }}
